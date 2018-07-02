@@ -178,6 +178,13 @@ aws-sdk@^2.251.1:
     uuid "3.1.0"
     xml2js "0.4.17"
 
+aws-serverless-express@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.2.0.tgz#f7ed4582ac59af3dda7f0e87e89e9e94c3ee67f1"
+  dependencies:
+    binary-case "^1.0.0"
+    type-is "^1.6.16"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -230,6 +237,10 @@ bcrypt-pbkdf@^1.0.0:
 bcryptjs@^2.1.0:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+
+binary-case@^1.0.0:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/binary-case/-/binary-case-1.1.4.tgz#d687104d59e38f2b9e658d3a58936963c59ab931"
 
 bl@^1.0.0:
   version "1.2.2"
@@ -2703,7 +2714,7 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-type-is@~1.6.15, type-is@~1.6.16:
+type-is@^1.6.16, type-is@~1.6.15, type-is@~1.6.16:
   version "1.6.16"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.16.tgz#f89ce341541c672b25ee7ae3c73dee3b2be50194"
   dependencies:

@@ -1,16 +1,20 @@
 {
   "name": "loopback-aws-api-gateway",
   "version": "1.0.0",
-  "main": "server/server.js",
+  "main": "lambda.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "start": "node server/server",
+    "posttest": "npm run lint && nsp check",
+    "generate-proxy": "node bin/generate-proxy",
+    "deploy": "node bin/deploy",
+    "destroy": "node bin/destroy"
   },
   "dependencies": {
+    "aws-serverless-express": "^3.2.0",
     "claudia": "^5.0.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
